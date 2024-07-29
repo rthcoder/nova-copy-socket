@@ -19,9 +19,11 @@ app.get("/", (req, res, next) => {
     res.json("Hello");
 });
 
-//start server
+import panelRouter from "./routers/socket.route.js";
+
 !async function () {
     try {
+        app.use(panelRouter);
     } catch (error) {
         console.log(error);
     };
