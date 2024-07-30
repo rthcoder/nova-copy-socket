@@ -57,7 +57,7 @@ nova - socket.io section
 
 - **Response**:
 
-```json
+```
 {
     status: 200,
     message: 'success'
