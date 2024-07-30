@@ -1,3 +1,4 @@
+import fs from "fs";
 import cors from "cors";
 import "./config/config.js";
 import express from "express";
