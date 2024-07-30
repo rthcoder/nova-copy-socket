@@ -45,7 +45,7 @@ nova - socket.io section
 - **Method**: POST
 
 - **Response**:
-- 
+
 ```json
 {
     status: 200,
