@@ -55,8 +55,9 @@ nova - socket.io section
 ## Stats
 - **Endpoint**: `/api/socket/stats`
 - **Method**: POST
-```
+
 - **Response**:
+
 ```json
 {
     status: 200,
