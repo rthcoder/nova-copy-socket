@@ -43,8 +43,9 @@ nova - socket.io section
 ## Panel
 - **Endpoint**: `/api/socket/panel`
 - **Method**: POST
-```
+
 - **Response**:
+- 
 ```json
 {
     status: 200,
