@@ -11,7 +11,7 @@ nova - socket.io section
 ## Installation
 
 1. **Repository** ni klonlash:
-2.  ```sh
+   ```sh
     git clone https://github.com/tohirdavrsmart/nova-copy-socket.git
     cd nova-copy-socket
     ```
