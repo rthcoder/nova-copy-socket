@@ -2,9 +2,9 @@ import socket from "../services/socket.service.js";
 
 const PANEL = (req, res, next) => {
     try {
-        const body = req?.body;
+        const query = req?.query;
 
-        socket.EMIT("panel", body);
+        socket.EMIT("panel", query);
 
 
         return res
@@ -22,9 +22,9 @@ const PANEL = (req, res, next) => {
 
 const STATS = (req, res, next) => {
     try {
-        const body = req?.body;
+        const query = req?.query;
 
-        socket.EMIT("stats", body);
+        socket.EMIT("stats", query);
 
 
         return res
