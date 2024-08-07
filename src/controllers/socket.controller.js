@@ -4,6 +4,13 @@ const PANEL = (req, res, next) => {
     try {
         const query = req?.query;
 
+        if (!query.id) {
+            return res.status(404).
+                json({ message: "No any data send" });
+        };
+
+        query.panel = true;
+
         socket.EMIT("panel", query);
 
 
@@ -24,8 +31,15 @@ const STATS = (req, res, next) => {
     try {
         const query = req?.query;
 
-        socket.EMIT("stats", query);
+        if (!query.id) {
+            return res.status(404).
+                json({ message: "No any data send" });
+        };
 
+        query.panel = true;
+
+
+        socket.EMIT("stats", query);
 
         return res
             .status(200)
